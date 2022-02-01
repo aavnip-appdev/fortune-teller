@@ -1,7 +1,5 @@
 Rails.application.routes.draw do  
 
-  get("/roll/2/6",{:controller => "application", :action => "two_d_six"})
-
   # PART 1: EACH IN ERB
   # ===================
 
@@ -48,6 +46,9 @@ Rails.application.routes.draw do
   #  - Wire it all up and make it say "hi". Test, READ THE ERROR MESSAGE, and debug if necessary.
   #  - Add some static HTML to mock up the response that you want to send back.
   #  - Write the Ruby to make it dynamic, and work properly.
+
+  get("/roll/1/6",{:controller => "application", :action => "one_d_six"})
+  get("/roll/2/6",{:controller => "application", :action => "two_d_six"})
 
   # /roll/1/6
   # /roll/2/6
