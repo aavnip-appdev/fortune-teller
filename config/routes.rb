@@ -1,4 +1,7 @@
 Rails.application.routes.draw do  
+
+  get("/roll/2/6",{:controller => "application", :action => "two_d_six"})
+
   # PART 1: EACH IN ERB
   # ===================
 
