@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   # PART 1: EACH IN ERB
   # ===================
 
-  get("/lottery/lucky", { :controller => "numbers", :action => "winners" })
-  get("/", { :controller => "numbers", :action => "winners" })
+  get("/lottery/lucky", { :controller => "numbers", :action => "winners_lucky" })
+  get("/lottery/unlucky", { :controller => "numbers", :action => "winners_unlucky" })
+  get("/", { :controller => "numbers", :action => "winners_lucky" })
 
   # Let users visit URLs:
 
